@@ -10,16 +10,10 @@ use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('login');
+    return view('view');
 });
-
-Route::post('/login', [AuthController::class, 'login']);
-Route::get('/charts', function () {
-    return view('charts.index');
-})->middleware('auth');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// Existing routes
 Route::resource('charts', ChartsController::class)->names('charts');
 Route::resource('categories', CategoryController::class)->names('categories');
 Route::resource('clients', ClientController::class)->names('clients');
