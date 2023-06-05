@@ -1,10 +1,10 @@
 ## USER SHOPPING CART AND ORDER SYSTEM
 
 <p align="center">
-<img src="https://img.shields.io/github/directory-file-count/Hexzanity/CRUD-LARAVEL/" alt="File Count"></a>
-<img src="https://img.shields.io/github/languages/count/Hexzanity/CRUD-LARAVEL/" alt="Languages"></a>
-<img src="https://img.shields.io/github/languages/code-size/Hexzanity/CRUD-LARAVEL/" alt="Code Size"></a>
-<img src="https://img.shields.io/github/forks/Hexzanity/CRUD-LARAVEL/" alt="Forks"></a>
+<img src="https://img.shields.io/github/directory-file-count/Hexzanity/CRUD-LARAVEL" alt="File Count"></a>
+<img src="https://img.shields.io/github/languages/count/Hexzanity/CRUD-LARAVEL" alt="Languages"></a>
+<img src="https://img.shields.io/github/languages/code-size/Hexzanity/CRUD-LARAVEL" alt="Code Size"></a>
+<img src="https://img.shields.io/github/forks/Hexzanity/CRUD-LARAVEL" alt="Forks"></a>
 
 <h2> System Features </h2>
 
