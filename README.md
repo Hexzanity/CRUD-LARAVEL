@@ -28,7 +28,10 @@
       - Read - The user can view the data of product from the user's page. Admin can view system's data from the admin dashboard page.
       - Update - The admin can update/edit system's data from the dashboard page.
       - Delete - The admin can delete/cancel orders of the users.
-      - 
+      
+## Visuals
+CLICK IMAGE TO VIEW THE GIF
+![AllCRUD](images/CRUD-LARAVEL.gif)
 # Installation
 
 1. Fork the Repository
