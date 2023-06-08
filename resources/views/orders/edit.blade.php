@@ -35,7 +35,6 @@
                 <input type="number" name="quantity" id="quantity" class="form-control" value="{{ $order->quantity }}">
             </div>
 
-            <!-- Add other fields for editing the order as needed -->
 
             <button type="submit" class="btn btn-primary">Update Order</button>
         </form>

@@ -25,7 +25,6 @@ class SupplierController extends Controller
             'name' => 'required',
             'address' => 'required',
             'contact_number' => 'required',
-            // Add other validation rules for the supplier fields
         ]);
 
         Supplier::create($data);
@@ -45,7 +44,6 @@ class SupplierController extends Controller
             'name' => 'required',
             'address' => 'required',
             'contact_number' => 'required',
-            // Add other validation rules for the supplier fields
         ]);
 
         $supplier->update($data);

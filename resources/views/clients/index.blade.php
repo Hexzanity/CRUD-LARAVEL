@@ -4,8 +4,8 @@
     <div class="container">
         <h1>Clients</h1>
 
-        <div class="text-right mb-3">
-        <a href="{{ route('clients.create') }}" class="btn btn-primary">Create New Client</a>
+                <div class="text-left mb-3 float-right">
+            <a href="{{ route('clients.create') }}" class="btn btn-primary">Create New Client</a>
         </div>
 
         <table class="table">
@@ -23,13 +23,13 @@
             <tbody>
                 @foreach($clients as $client)
                     <tr>
-                        <td class="tex-center">{{ $client->first_name }}</td>
-                        <td class="tex-center">{{ $client->last_name }}</td>
-                        <td class="tex-center">{{ $client->birthdate }}</td>
-                        <td class="tex-center">{{ $client->address }}</td>
-                        <td class="tex-center">{{ $client->email }}</td>
-                        <td class="tex-center">{{ $client->password }}</td>
-                        <td>
+                        <td class="text-center col-md-1">{{ $client->first_name }}</td>
+                        <td class="text-center col-md-1">{{ $client->last_name }}</td>
+                        <td class="text-center col-md-1">{{ $client->birthdate }}</td>
+                        <td class="text-center col-md-1">{{ $client->address }}</td>
+                        <td class="text-center col-md-1">{{ $client->email }}</td>
+                        <td class="text-center col-md-1">{{ $client->password }}</td>
+                        <td class="col-md-1">
                             <a href="{{ route('clients.edit', $client->id) }}" class="btn btn-success">Edit</a>
                             <form action="{{ route('clients.destroy', $client->id) }}" method="POST" style="display: inline-block;">
                                 @csrf

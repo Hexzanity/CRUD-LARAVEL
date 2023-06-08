@@ -18,7 +18,7 @@ class OrderController extends Controller
 
     public function create()
     {
-        $clients = Client::all(); // Fetch all clients from the database
+        $clients = Client::all();
         $products = Product::all();
 
         return view('orders.create', compact('clients', 'products'));
@@ -30,7 +30,6 @@ class OrderController extends Controller
             'client_id' => 'required',
             'product_id' => 'required',
             'quantity' => 'required|numeric',
-            // Add other validation rules for the order fields
         ]);
 
         Order::create($data);

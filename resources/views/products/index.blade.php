@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h1>Products</h1>
-        <div class="text-right mb-3">
+                <div class="text-left mb-3 float-right">
             <a href="{{ route('products.create') }}" class="btn btn-primary">Create New Product</a>
         </div>
 

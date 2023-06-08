@@ -1,5 +1,5 @@
 <style>
-    /* Sidebar styles */
+
     .sidebar {
       position: fixed;
       top: 0;
@@ -49,9 +49,9 @@
       background-color: #3b68b9;
     }
 
-    /* Main content styles */
+
     .content {
-      margin-left: 200px; /* Set the same width as the sidebar */
+      margin-left: 200px;
       padding: 20px;
       text-align: center;
       background-color: #f9f9f9;

@@ -2,25 +2,23 @@
 include 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Retrieve the form data
-    $fname = $_POST['Fname'];
-    $lname = $_POST['Lname'];
-    $birthday = $_POST['Birthday'];
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $birthdate = $_POST['birthdate'];
     $address = $_POST['address'];
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $fname = mysqli_real_escape_string($db, $_POST['Fname']);
-    $lname = mysqli_real_escape_string($db, $_POST['Lname']);
-    $birthday = mysqli_real_escape_string($db, $_POST['Birthday']);
+    $first_name = mysqli_real_escape_string($db, $_POST['first_name']);
+    $last_name = mysqli_real_escape_string($db, $_POST['last_name']);
+    $birthdate = mysqli_real_escape_string($db, $_POST['birthdate']);
     $address = mysqli_real_escape_string($db, $_POST['address']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
 
-    $insertQuery = "INSERT INTO client (Fname, Lname, Birthday, address, email, password) VALUES ('$fname','$lname', '$birthday', '$address', '$email',$password)";
+    $insertQuery = "INSERT INTO clients (first_name, last_name, birthdate, address, email, password) VALUES ('$first_name','$last_name', '$birthdate', '$address', '$email', '$password')";
 
     if (mysqli_query($db, $insertQuery)) {
-        // Insertion successful
         echo '<div class="container justify-content-center mt-4">';
         echo '<div class="alert alert-success">Account added successfully.</div>';
         echo '</div>';
@@ -36,12 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   ';
     }
 }
-$query = 'SET @autoid :=0';
-mysqli_query($db, $query);
-$query = 'UPDATE client SET client_id = @autoid := (@autoid+1)';
-mysqli_query($db, $query);
-$query = 'ALTER TABLE client AUTO_INCREMENT = 1';
-mysqli_query($db, $query);
+
 mysqli_close($db);
 ?>
 <!DOCTYPE html>
@@ -133,16 +126,16 @@ mysqli_close($db);
         <div class="login-form text-center">
         <form method="POST">
                     <div class="input-group input-group-outline mb-3">
-                      <label for="Fname" class="form-label">First Name</label>
-                      <input type="text" id = "Fname" name="Fname" class="form-control">
+                      <label for="first_name" class="form-label">First Name</label>
+                      <input type="text" id = "first_name" name="first_name" class="form-control">
                     </div>
                     <div class="input-group input-group-outline mb-3">
-                      <label for="Lname" class="form-label">Last Name</label>
-                      <input type="text" id = "Lname" name="Lname" class="form-control">
+                      <label for="last_name" class="form-label">Last Name</label>
+                      <input type="text" id = "last_name" name="last_name" class="form-control">
                     </div>
                     <div class="input-group input-group-outline mb-3">
-                      <label for="Birthday" class="form-label">Birthday</label>
-                      <input type="date" id ="Birthday" name="Birthday" class="form-control text-center">
+                      <label for="birthdate" class="form-label">birthdate</label>
+                      <input type="date" id ="birthdate" name="birthdate" class="form-control text-center">
                     </div>
 
                     <div class="input-group input-group-outline mb-3">

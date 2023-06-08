@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Nike Admin</title>
-    <!-- Add your CSS stylesheets here -->
+
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/demo-documentation.css') }}">
         <link rel="stylesheet" href="{{ asset('js/bootstrap.min.js') }}">

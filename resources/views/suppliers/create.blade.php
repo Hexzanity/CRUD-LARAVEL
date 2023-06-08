@@ -17,7 +17,7 @@
                 <label for="contact_number">Contact Number:</label>
                 <input type="text" class="form-control" name="contact_number" id="contact_number" required>
             </div>
-            <!-- Add more fields as needed -->
+
 
             <button type="submit" class="btn btn-primary">Create</button>
         </form>

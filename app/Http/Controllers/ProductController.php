@@ -34,7 +34,6 @@ class ProductController extends Controller
             'stock' => 'required|numeric',
             'category_id' => 'required',
             'supplier_id' => 'required',
-            // Add other validation rules for the product fields
         ]);
 
         $product = new Product();
@@ -70,7 +69,6 @@ class ProductController extends Controller
             'stock' => 'required|numeric',
             'category_id' => 'required',
             'supplier_id' => 'required',
-            // Add other validation rules for the product fields
         ]);
 
         $product->update($data);

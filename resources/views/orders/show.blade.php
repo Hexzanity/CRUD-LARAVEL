@@ -11,8 +11,8 @@
             <label for="product">Product:</label>
             <p>{{ $order->product }}</p>
         </div>
-        <!-- Add more details as needed -->
+
         <a href="{{ route('orders.edit', $order->id) }}" class="btn btn-success">Edit</a>
-        <!-- Add more actions as needed -->
+
     </div>
 @endsection

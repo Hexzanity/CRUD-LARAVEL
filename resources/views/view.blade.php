@@ -29,7 +29,6 @@
 					<section id="one">
 					</section>
 
-				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
 							<div>
@@ -48,19 +47,19 @@
 						</section>
 					</section>
 
-				<!-- Three -->
+
 					<section id="three" class="wrapper style4">
 						<div class="inner">
 					</section>
 
-				<!-- CTA -->
+
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 
 						</div>
 					</section>
 
-				<!-- Footer -->
+
 					<footer id="footer">
 						<ul class="icons">
 							<li><a href="https://www.facebook.com/hexzy1925" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -73,7 +72,7 @@
 
 			</div>
 
-		<!-- Scripts -->
+
 			<script src= "{{ asset('assets/js/jquery.min.js')}}"></script>
 			<script src= "{{ asset('assets/js/jquery.scrollex.min.js')}}"></script>
 			<script src= "{{ asset('assets/js/jquery.scrolly.min.js')}}"></script>

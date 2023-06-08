@@ -1,11 +1,10 @@
 <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Retrieve the product and earnings data passed from the controller
             var productData = {!! json_encode($productData) !!};
             var earningsData = {!! json_encode($earningsData) !!};
             var salesData = {!! json_encode($salesData) !!};
 
-            // Extract the necessary data for the earnings chart
+
             var productNames = productData.map(function(product) {
                 return product.name;
             });
@@ -18,7 +17,7 @@
                 return product.price * earnings.total_quantity;
             });
 
-            // Extract the necessary data for the sales chart
+
             var dates = salesData.map(function(sale) {
                 return sale.date;
             });
@@ -27,7 +26,7 @@
                 return sale.total_sales;
             });
 
-            // Generate an array of random colors for the earnings chart
+
             var earningsColors = [];
             for (var i = 0; i < productData.length; i++) {
                 var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -53,14 +52,14 @@
                             beginAtZero: true,
                             ticks: {
                                 callback: function(value, index, values) {
-                                    return '₱' + value; // Add the ₱ symbol to the tick labels
+                                    return '₱' + value;
                                 }
                             }
                         }
                     },
                     plugins: {
                         legend: {
-                            display: false // Hide the legend to avoid duplicating the labels
+                            display: false
                         }
                     }
                 }
@@ -87,7 +86,7 @@
                             beginAtZero: true,
                             ticks: {
                                 callback: function(value, index, values) {
-                                    return '₱' + value; // Add the ₱ symbol to the tick labels
+                                    return '₱' + value;
                                 }
                             }
                         }

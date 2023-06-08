@@ -36,7 +36,7 @@
                 <input type="password" name="password" id="password" class="form-control" required>
             </div>
 
-            <!-- Add other input fields for the client attributes -->
+
 
             <button type="submit" class="btn btn-primary">Create</button>
         </form>

@@ -28,7 +28,6 @@ class ClientController extends Controller
             'address' => 'required',
             'email' => 'required|email',
             'password' => 'required',
-            // Add validation rules for other client attributes
         ]);
 
         $client = Client::create($data);
@@ -51,7 +50,6 @@ class ClientController extends Controller
             'address' => 'required',
             'email' => 'required|email',
             'password' => 'required',
-            // Add validation rules for other client attributes
         ]);
 
         $client->update($data);

@@ -17,8 +17,5 @@ class Client extends Model
         'address',
         'email',
         'password',
-        // Add other attributes that can be mass assigned
     ];
-
-    // Rest of your model code...
 }

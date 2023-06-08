@@ -44,7 +44,7 @@
                     @endforeach
                 </select>
             </div>
-            <!-- Add more fields as needed -->
+
 
             <button type="submit" class="btn btn-primary">Update</button>
         </form>

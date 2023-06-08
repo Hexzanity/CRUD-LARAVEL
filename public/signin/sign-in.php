@@ -7,7 +7,7 @@ if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = "SELECT * FROM admin WHERE user='$username' AND pass='$password'";
+    $query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
     $result = mysqli_query($db, $query);
 
     if (mysqli_num_rows($result) == 1) {
@@ -16,14 +16,14 @@ if (isset($_POST['login'])) {
         exit;
     }
 
-    $query = "SELECT * FROM client WHERE email='$username' AND password='$password'";
+    $query = "SELECT * FROM clients WHERE email='$username' AND password='$password'";
     $result = mysqli_query($db, $query);
 
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['client_id'] = $row['client_id'];
-        $_SESSION['fname'] = $row['Fname'];
-        $_SESSION['lname'] = $row['Lname'];
+        $_SESSION['id'] = $row['id'];
+        $_SESSION['first_name'] = $row['first_name'];
+        $_SESSION['last_name'] = $row['last_name'];
         header('Location: ../order/dist/order.php');
         exit;
     }

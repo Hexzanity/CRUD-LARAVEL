@@ -3,7 +3,7 @@
 session_start();
 include 'db.php';
 
-$user_id = $_SESSION['client_id'];
+$user_id = $_SESSION['id'];
 
 $date_ordered = date('Y-m-d H:i:s');
 $receive_date = date('Y-m-d H:i:s', strtotime($date_ordered.' +15 days'));
@@ -14,6 +14,15 @@ foreach ($_SESSION['cart'] as $key => $product) {
 
     $sql = "INSERT INTO orders (client_id, date_ordered, product_id, quantity, receive_date)
             VALUES ('$user_id','$date_ordered', '$product_id', '$quantity', '$receive_date')";
+    $result = mysqli_query($db, $sql);
+
+    if (!$result) {
+        exit('Error: '.mysqli_error($db));
+    }
+
+    $sql = "UPDATE products
+            SET Stocks = Stocks - '$quantity'
+            WHERE product_id = '$product_id'";
     $result = mysqli_query($db, $sql);
 
     if (!$result) {

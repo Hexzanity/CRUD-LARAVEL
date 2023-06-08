@@ -8,7 +8,7 @@
             @csrf
             @method('PUT')
 
-            <!-- Add form fields for editing client details -->
+
             <div class="form-group">
                 <label for="first_name">First Name</label>
                 <input type="text" name="first_name" id="first_name" value="{{ $client->first_name }}" class="form-control">
@@ -39,7 +39,7 @@
                 <input type="password" name="password" id="password" class="form-control">
             </div>
 
-            <!-- Add more fields for other client details -->
+
 
             <button type="submit" class="btn btn-primary">Update</button>
         </form>

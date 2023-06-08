@@ -37,7 +37,7 @@
                     <th>Supplier</th>
                     <td>{{ $product->supplier->name }}</td>
                 </tr>
-                <!-- Add more fields as needed -->
+
             </tbody>
         </table>
         <a href="{{ route('products.index') }}" class="btn btn-secondary">Back to List</a>
