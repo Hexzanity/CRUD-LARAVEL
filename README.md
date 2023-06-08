@@ -171,9 +171,8 @@ For Questions and Further Assistance, you can Contact us using
 
 # Authors and Acknowledgements
 
-![Hexzy](images/Hector.png)
-
 ## [Hector A. Herrera](https://github.com/hexzanity)
+## Ehd Steven Jaranilla
 
 <br> </br>
 
